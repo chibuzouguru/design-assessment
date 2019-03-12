@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600');
+
+$source-serif-pro: 'Source Serif Pro', serif;
+
+.button {
+  border-radius: 10px;
+  border: solid 1px #363c3c;
+  background-color: #ffffff;
+  padding: 16px 49px 14px 50px;
+  font-size: 24px;
+  font-family: $source-serif-pro;
+  font-weight: bold;
+}
+
+.button--random {
+  margin-bottom: 20px;
+  padding: 16px 40px 14px 45px;
+}
+
+.singlecolor__button {
+  text-align: center;
+  margin-top: 40px;
+
+  .button--clear {
+    width: 260px;
+  }
+}

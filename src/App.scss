@@ -1,0 +1,57 @@
+@import 'styles/_grid.scss';
+@import 'styles/nav';
+@import 'styles/sidebar';
+@import 'styles/buttons';
+@import 'styles/grid';
+@import 'styles/pagination';
+
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600');
+
+$source-serif-pro: 'Source Serif Pro', serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $source-serif-pro;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* body styling */
+.main {
+  background-color: #fff;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 1113px;
+}
+
+.main__container {
+  width: 100%;
+  height: 100%;
+}
+
+/* remove styling from list items */
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+// Set the display for the sidebar and the grid/single swatch
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+@media screen and (max-width: 895px) {
+  .content {
+    flex-direction: column;
+  }
+}

@@ -1,33 +1,192 @@
-.App {
+html,
+body {
+  height: 100%;
+}
+
+/* body styling */
+.main {
+  background-color: #fff;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 1113px;
+}
+
+.main__container {
+  width: 100%;
+  height: 100%;
+}
+
+/* remove styling from list items */
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navigation and Header styling */
+nav {
+  background-color: #363c3c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 0 40px 0 30px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav__logo {
+  width: 250px;
+  height: 46px;
+}
+
+.nav__image {
+  width: 100%;
+}
+
+#nav__input {
+  /* come back here */
+  padding: 17px 0 14px 21px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  width: 298px;
+}
+
+/* Content Section styling with the sidebar and the grid display */
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.sidebar {
+  box-shadow: 2px 0 6px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #adadad;
+  background-color: #d6d8d8;
+  width: 20%;
+  padding: 80px 0 0 30px;
+  height: 100%;
+}
+
+.sidebar__listItem {
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #363c3c;
+  padding-bottom: 20px;
+}
+
+/* Grid Card  list styling */
+.grid,
+.singlecolor {
+  flex-grow: 4;
+  padding: 80px 40px 0 40px;
+}
+
+.grid__list {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 56px;
+  grid-row-gap: 41px;
+}
+
+.lower-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+
+.lower-grid__item {
+  width: 17%;
+}
+
+.card--lowergrid {
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #fdfdfd;
+  background-color: #fdfdfd;
+}
+
+.card__color {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding-bottom: 96%;
+}
+
+.card__caption {
+  padding-left: 23px;
+}
+
+.card__text {
+  margin: 13px 0 9px 0;
+  font-size: 24px;
+}
+
+.card--big {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 500px;
+  border: solid 1px #363c3c;
+}
+
+.card--big__color {
+  width: 100%;
+  padding-bottom: 53%;
+}
+
+.card--big__caption {
+  padding: 1.9em 0 1.9em 3.6em;
+}
+
+.card--big__text {
+  font-size: 48px;
+  color: #363c3c;
+}
+
+/* Lower grid */
+.card--lowergrid__color {
+  padding-bottom: 60%;
+}
+
+/* Single item styling */
+
+
+/* button styling */
+.button {
+  border-radius: 10px;
+  border: solid 1px #363c3c;
+  background-color: #ffffff;
+  padding: 16px 49.5px 14px 55px;
+  font-size: 24px;
+}
+
+.button--random {
+  margin-bottom: 20px;
+}
+
+.singlecolor__button {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Pagination controls styling */
+.pagination {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

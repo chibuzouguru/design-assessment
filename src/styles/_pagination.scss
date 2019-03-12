@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 81px;
+
+
+  &__number {
+    margin-right: 24.5px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  &__number:last-child {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,113 @@
+.grid,
+.singlecolor {
+  flex-grow: 4;
+  padding: 80px 40px 0 40px;
+}
+
+.grid__list {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 56px;
+  grid-row-gap: 41px;
+}
+
+.lower-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+
+.lower-grid__item {
+  width: 17%;
+}
+
+.card--lowergrid {
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px #fdfdfd;
+  background-color: #fdfdfd;
+}
+
+.card__color {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding-bottom: 96%;
+}
+
+.card__caption {
+  padding-left: 23px;
+}
+
+.card__text {
+  margin: 13px 0 9px 0;
+  font-size: 24px;
+}
+
+.card--big {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 250px;
+  border: solid 1px #363c3c;
+}
+
+.card--big__color {
+  width: 100%;
+  padding-bottom: 53%;
+}
+
+.card--big__caption {
+  padding: 1.9em 0 1.9em 3.6em;
+}
+
+.card--big__text {
+  font-size: 48px;
+  color: #363c3c;
+}
+
+/* Lower grid */
+.card--lowergrid__color {
+  padding-bottom: 60%;
+}
+
+// Media Queries for responsive design
+@media screen and (max-width: 921px) {
+  .grid__list {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
+
+  .singlecolor,
+  .grid {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  .card--big {
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px #363c3c;
+  }
+
+  .lower-grid {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+      
+  .lower-grid__item {
+    width: 90%;
+    padding-bottom: 50px;
+    
+  }
+  
+}
+
+
